@@ -14,8 +14,8 @@ export default function Card(props){
             <img src={new URL(`../assets/${props.coverImg}`, import.meta.url).href} className='CardImg'/>
             <div className='stats'>
                 <img src={star} className='star'/>
-                <span className='rating'>{props.rating}</span>
-                <span className='grey'>({props.reviewCount}) • </span>
+                <span className='rating'>{props.stats.rating}</span>
+                <span className='grey'>({props.stats.reviewCount}) • </span>
                 <span className='grey'>{props.location}</span>
             </div>
             <p className='title'>{props.title}</p>
